@@ -27,9 +27,9 @@ class HomeViewBody extends StatelessWidget {
                     trailing: IconButton(
                                 onPressed: (){
                                  context.read<FlashCardsCubit>().deleteFlashcard(index);
-                                  print("Options: ${flashcard.options}");
+                                 // print("Options: ${flashcard.options}");
                               },
-                               icon: Icon(Icons.delete)),
+                               icon:const Icon(Icons.delete)),
                   );
                   
                 }),
@@ -41,11 +41,11 @@ class HomeViewBody extends StatelessWidget {
                   Navigator.push(context, MaterialPageRoute(
                     builder: (context) {
                       context.read<FlashCardsCubit>().startQuiz();
-                      return QuizView();
+                      return const QuizView();
                       }
                   
                   ));
-                }, child: Text('Start Quiz')),
+                }, child:const Text('Start Quiz')),
               )
             ],
             

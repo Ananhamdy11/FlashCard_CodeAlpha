@@ -71,7 +71,7 @@ class _AddflashcardViewBodyState extends State<AddflashcardViewBody> {
             Navigator.pop(context);
       
           },
-           child: Text('Add FlashCard ')
+           child:const Text('Add FlashCard ')
         )
         ],
       ),
