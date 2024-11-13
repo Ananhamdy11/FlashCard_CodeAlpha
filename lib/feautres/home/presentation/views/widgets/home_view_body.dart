@@ -11,7 +11,7 @@ class HomeViewBody extends StatelessWidget {
     return BlocBuilder<FlashCardsCubit, FlashCardsState>(
       builder: (context, state) {
         if(state is FlashCardsLoading){
-          return Center(child: CircularProgressIndicator(),);
+          return const Center(child: CircularProgressIndicator(),);
         }else if (state is FlashCardsSuccess){
           return Center(
           child: Column(
