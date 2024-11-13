@@ -18,7 +18,7 @@ class _AddflashcardViewState extends State<AddflashcardView> {
         ),),
         backgroundColor: Colors.blue,
       ),
-      body: AddflashcardViewBody(),
+      body:const AddflashcardViewBody(),
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/feautres/home/presentation/views/addFlashCard_view.dart';
+import 'package:flutter_application_1/feautres/home/presentation/views/addfashcard_view.dart';
 import 'package:flutter_application_1/feautres/home/presentation/views/widgets/home_view_body.dart';
 
 class HomeView extends StatelessWidget {

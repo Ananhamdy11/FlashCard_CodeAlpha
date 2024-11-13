@@ -28,7 +28,7 @@ class QuizViewBody extends StatelessWidget {
                       child: Text(option),
                     ),
                   );
-                }).toList(),
+                }),
           const SizedBox(height: 20),
                 Text(
                   "Question ${state.currentIndex + 1} of ${state.flashcards.length}",
@@ -44,8 +44,8 @@ class QuizViewBody extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Your Score", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-                Text("${state.score}", style: TextStyle(fontSize: 32, color: Colors.blue)),
+                const Text("Your Score", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+                Text("${state.score}", style: const TextStyle(fontSize: 32, color: Colors.blue)),
                 const SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
@@ -58,7 +58,7 @@ class QuizViewBody extends StatelessWidget {
             ),
           );
          }else{
-          return Center(child: const CircularProgressIndicator());
+          return const Center(child:  CircularProgressIndicator());
          }
       },
     );
